@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Coding Practice</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,20 +17,39 @@
         </nav>
     </header>
 
-
+    <main>
     <h1>My Web Page</h1>
     <h2>This is an h2</h2>
     <h3>This is an h3</h3>
     <h4>Hello</h4>
-    <h5>Hello World</h5>
+    <h5 class="title">Hello World</h5>
+    <h5>How are you?</h5>
     <h6>This is it</h6>
 
-    <div>
+    <div class="container">
         <h2>What are divs</h2>
          <h5>Divs are used as containers for other html elements and help us divide our page into sections.</h5>
+         
+    </div>
+
+    <div class="flex">
+        <p>
+            Let's learn about Flexbox. Flexbox needs a parent container in order to work. The elements inside of that container
+            can be adjusted and centered and moved around easily.
+        </p>
+    
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+        <div class="box" id="box5">Box 5</div>
+        <div class="box" id="box6">Box 6</div>
+    </div>
+    <!-- body>header>nav>ul>li*3+main>section*3>article*2+footer>section>article+ -->
+   
          <section>
              <p>This is a paragraph with normal sized text</p>
-             <i>This is italic</i><br>
+             <i id="italic">This is italic</i><br>
              <em>This is emphasized text</em><br>
              <strong>This element uses a stronger text</strong><br>
              <b>This is a bold text</b><br>
@@ -40,7 +59,8 @@
 
          <img src="download.jpeg" alt="kitten" height="300">
 
-         <a href="https://petfinder.com"><img src="download.jpeg" alt="kitten" height="300"></a>
-    </div>
+         <a href="https://petfinder.com"><img src="download.jpeg" alt="kitten" class="circle-img"></a>
+        
+     </main>
 </body>
 </html>

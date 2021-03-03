@@ -61,6 +61,74 @@ nav li{
     animation-timing-function: linear;
 }
 
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: 4s;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, green, pink, purple);
+}
+
+@keyframes getBigger {
+    0%{transform: scale(1);}
+    50%{transform: scale(2);}
+    100%{transform: scale(.5);}
+}
+
+#box3{
+    animation: getBigger infinite 8s ease-in;
+    border-radius: 50%;
+    background: orangered;
+}
+
+@keyframes changeColors {
+    0%{background: palevioletred;}
+    25%{background: olivedrab;}
+    50%{background: rgb(241, 29, 213);}
+    100%{background: bisque;}
+}
+
+#box4{
+    animation: changeColors 3s 2s forwards;
+}
+
+@keyframes moveBox{
+    0%{left: 0px; top: 0px;}
+    25%{left: 100px; top: 0px;}
+    50%{left: 100px; top: 200px;}
+    75%{left: 0px; top: 200px;}
+    100%{left: 0px; top: 0px;}
+}
+
+#box5{
+    animation: moveBox 5s 3s;
+    background: red;
+    position: relative;
+}
+
+#box6{
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+/* html{
+    background-image: url(download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* html {
+    background-image: radial-gradient(blue, green, purple);
+} */
+
 .circle-img{
     border-radius: 50%;
 }
